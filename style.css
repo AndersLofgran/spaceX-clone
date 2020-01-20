@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+li {
+    color: white;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: black;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+    .navbar-items-left, .navbar-items-right {
+        padding: 0 5vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .navbar-items-left > li {
+            font-size: 20px;
+            margin: 10px;
+            width: max-content;
+        }
+
+        .navbar-items-right > li {
+            color: grey;
+            margin: 10px;
+            width: max-content;
+        }
