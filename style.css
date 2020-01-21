@@ -1,38 +1,167 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-li {
+li, span {
     color: white;
+    list-style: none;
 }
 
-.navbar {
+.header {
+    position: fixed;
+    top: 0;
     height: 80px;
     width: 100%;
     background: black;
     display: flex;
-    list-style: none;
     justify-content: center;
-    align-items: center;
-    font-size: 18px;
+    font-size: 12px;
 }
 
-    .navbar-items-left, .navbar-items-right {
-        padding: 0 5vw;
+    .header-items-left, .header-items-right {
+        padding: 0 2vw;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
-        .navbar-items-left > li {
-            font-size: 20px;
+        .header-items-left > li {
+            font-size: 14px;
             margin: 10px;
             width: max-content;
         }
 
-        .navbar-items-right > li {
+        .header-items-right > li {
             color: grey;
             margin: 10px;
             width: max-content;
+        }
+
+.main-image {
+    background-image: url("https://www.spacex.com/sites/spacex/files/ifa_liftoff1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+    .image-overlay {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .75);
+        display: flex;
+        flex-direction: column;
+    }
+
+        .image-overlay-items-top {
+            margin: 0 auto;
+            justify-content: center;
+        }
+            .image-overlay-items-top > * {
+                margin: 30px 10vw;
+            }
+        .image-overlay-items-bottom {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .image-overlay-items-bottom > * {
+            background-color: rgb(0, 0, 0, .6);
+            color: white;
+            padding: 5px 5% 10px 5%;
+            font-size: 12px;
+            border: none;
+        }
+        .image-overlay-items-bottom > *:hover {
+            background-color: rgb(0, 0, 0, 0);
+        }
+
+    .item-bigger-text {
+        font-size: 24px;
+    }
+
+    .image-overlay-items-top > button {
+        border: none;
+        border-radius: 2px;
+        padding: 10px 40px;
+    }
+
+.card-header {
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+    .cards {
+        width: min-content;
+        height: 320px;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .15);
+    }
+
+        .cards > * {
+            margin: 10px;
+        }
+
+        .card-image-one {
+            height: 200px;
+            width: 300px;
+            background-image: url('https://mk0spaceflightnoa02a.kinstacdn.com/wp-content/uploads/2020/01/49399916862_cd676f67f6_o-copy.jpg');
+            background-size: cover;
+        }
+
+        .card-image-two {
+            height: 200px;
+            width: 300px;
+            background-image: url('https://s.hdnux.com/photos/71/16/17/15000551/7/920x920.jpg');
+            background-size: cover;
+        }
+
+        .card-image-three {
+            height: 200px;
+            width: 300px;
+            background-image: url('https://cdn.technologyreview.com/i/images/489539469117dae1036a2o.jpg?sw=959&cx=0&cy=219&cw=3840&ch=2160');
+            background-size: cover;
+        }
+
+
+.footer {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+    .footer-items-left, .footer-items-right {
+        margin: 0 5vw;
+        padding: 0 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .footer-items-left img {
+            height: 12px;
+        }
+    
+        .footer-items-left > li {
+            font-size: 14px;
+            margin: 10px;
+            width: max-content;
+        }
+
+        .footer-items-right > li {
+            color: grey;
         }
